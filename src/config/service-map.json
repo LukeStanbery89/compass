@@ -1,0 +1,14 @@
+{
+    "first": {
+        "device": "ATLAS",
+        "protocol": "http",
+        "port": "1000",
+        "path": "/"
+    },
+    "second": {
+        "device": "ATLAS",
+        "protocol": "http",
+        "port": "2000",
+        "path": "/"
+    }
+}

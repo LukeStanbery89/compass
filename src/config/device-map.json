@@ -1,0 +1,17 @@
+{
+    "MACBOOK": {
+        "ipSuffix": "100"
+    },
+    "ATLAS": {
+        "ipSuffix": "200"
+    },
+    "ABICUS": {
+        "ipSuffix": "300"
+    },
+    "ASTROLABE": {
+        "ipSuffix": "400"
+    },
+    "CODEX": {
+        "ipSuffix": "500"
+    }
+}
