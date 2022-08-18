@@ -1,23 +1,23 @@
 {
-  "name": "compass",
-  "version": "1.0.0",
-  "description": "Package for interfacing with a directory of ports and static IPs addresses on the LAN.",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LukeStanbery89/compass.git"
-  },
-  "keywords": [
-    "ip",
-    "port"
-  ],
-  "author": "Luke Stanbery",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/LukeStanbery89/compass/issues"
-  },
-  "homepage": "https://github.com/LukeStanbery89/compass#readme"
+    "name": "@lukestanbery/compass",
+    "version": "0.1.1",
+    "description": "Package for interfacing with a directory of ports and static IPs addresses on the LAN.",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LukeStanbery89/compass.git"
+    },
+    "keywords": [
+        "ip",
+        "port"
+    ],
+    "author": "Luke Stanbery",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LukeStanbery89/compass/issues"
+    },
+    "homepage": "https://github.com/LukeStanbery89/compass#readme"
 }
