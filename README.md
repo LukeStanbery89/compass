@@ -11,7 +11,9 @@ npm install @lukestanbery/compass
 # Configuration
 Compass requires two config files:
 
-**Master Config** - This file can have any name and can be hosted anywhere, but it requires the following JSON schema, where `MY_SERVER` is the name given to the device such as a server, and `MY_APP` is the name of a single application:
+**Master Config** - This file can have any name and can be located anywhere on the same machine, but it requires the following JSON schema, where `MY_SERVER` is the name given to the device such as a server, and `MY_APP` is the name of a single application:
+
+**Note:** Compass currently only supports locally-hosted master config files. Support for remote/CDN-hosted files is coming soon.
 
 ```json
 {
@@ -34,8 +36,6 @@ Compass requires two config files:
 ```
 
 **.compassrc.json** - This is the config file that contains the Compass config for your project. This file will tell your project where the Master Config file is located. The only supported format is JSON and the only supported file name is `.compassrc.json`.
-
-**Note:** Compass currently only supports locally-hosted config files. Support for remote/CDN-hosted files is coming soon.
 
 ```json
 {
