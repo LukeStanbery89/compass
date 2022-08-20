@@ -1,7 +1,11 @@
-const deviceMap = require('./config/device-map.json');
-const serviceMap = require('./config/service-map.json');
+const path = require('path');
+const { isHttpURL } = require('./utils');
 
-function getURL(service) {
+const compassconfig = _getCompassConfig();
+const deviceMap = compassconfig.deviceMap;
+const serviceMap = compassconfig.serviceMap;
+
+function getServiceURL(service) {
     const serviceData = serviceMap[service];
     if (!serviceData) {
         throw Error('COMPASS ERROR: Invalid service identifier');
@@ -10,6 +14,16 @@ function getURL(service) {
     return `${serviceData.protocol}://${ip}:${serviceData.port}${serviceData.path}`;
 }
 
+function _getCompassConfig() {
+    const compassrc = require(path.join(process.cwd(), '/.compassrc.json'));
+    if (isHttpURL(compassrc.configpath)) {
+        throw Error('COMPASS ERROR: Compass currently only supports locally hosted files');
+        // TODO: return compassrc.configpath;
+    } else {
+        return require(path.join(process.cwd(), compassrc.configpath));
+    }
+}
+
 module.exports = {
-    getURL,
+    getServiceURL,
 };
