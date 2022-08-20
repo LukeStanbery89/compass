@@ -2,9 +2,10 @@
     "name": "@lukestanbery/compass",
     "version": "0.1.1",
     "description": "Package for interfacing with a directory of ports and static IPs addresses on the LAN.",
-    "main": "src/index.js",
+    "source": "src/index.js",
+    "main": "dist/index.js",
     "scripts": {
-        "test": "test"
+        "build": "parcel build"
     },
     "repository": {
         "type": "git",
@@ -19,5 +20,8 @@
     "bugs": {
         "url": "https://github.com/LukeStanbery89/compass/issues"
     },
-    "homepage": "https://github.com/LukeStanbery89/compass#readme"
+    "homepage": "https://github.com/LukeStanbery89/compass#readme",
+    "devDependencies": {
+        "parcel": "^2.7.0"
+    }
 }
