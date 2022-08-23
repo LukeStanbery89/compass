@@ -47,7 +47,7 @@ Compass requires two config files:
 ```javascript
 const compass = require('@lukestanbery/compass');
 
-const pathToMyApp = compass.getURL('MY_APP');
+const pathToMyApp = compass.getServiceURL('MY_APP');
 console.log(pathToMyApp); // https://192.168.86.100:1000/
 ```
 
