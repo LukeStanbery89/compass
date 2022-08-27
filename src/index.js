@@ -1,5 +1,6 @@
 const path = require('path');
 const { isHttpURL } = require('./utils');
+const compassrc = require(path.join(process.cwd(), '/.compassrc.json'));
 
 const compassconfig = _getCompassConfig();
 const deviceMap = compassconfig.deviceMap;
@@ -15,7 +16,6 @@ function getServiceURL(service) {
 }
 
 function _getCompassConfig() {
-    const compassrc = require(path.join(process.cwd(), '/.compassrc.json'));
     if (isHttpURL(compassrc.configpath)) {
         throw Error('COMPASS ERROR: Compass currently only supports locally hosted files');
         // TODO: return compassrc.configpath;
