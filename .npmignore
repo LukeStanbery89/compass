@@ -3,3 +3,4 @@ src/
 coverage
 test
 jest.config.json
+.githooks
