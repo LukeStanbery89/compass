@@ -1,7 +1,0 @@
-.githooks
-.parcel-cache
-coverage
-jest.config.json
-scripts
-src
-test

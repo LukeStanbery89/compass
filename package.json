@@ -9,6 +9,9 @@
         "postinstall": "./scripts/postinstall.sh",
         "test-unit": "jest --coverage=true ./test/unit --verbose --runInBand"
     },
+    "files": [
+        "dist/*"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/LukeStanbery89/compass.git"
