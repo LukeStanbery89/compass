@@ -6,6 +6,7 @@
     "main": "dist/index.js",
     "scripts": {
         "build": "parcel build",
+        "postinstall": "./scripts/postinstall.sh",
         "test-unit": "jest --coverage=true ./test/unit --verbose --runInBand"
     },
     "repository": {
