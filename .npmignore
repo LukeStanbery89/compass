@@ -1,6 +1,7 @@
-src/
+.githooks
 .parcel-cache
 coverage
-test
 jest.config.json
-.githooks
+scripts
+src
+test
