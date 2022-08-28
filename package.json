@@ -4,6 +4,11 @@
     "description": "Package for interfacing with a directory of ports and static IPs addresses on the LAN.",
     "source": "src/index.js",
     "main": "dist/index.js",
+    "targets": {
+        "main": {
+            "optimize": true
+        }
+    },
     "scripts": {
         "build": "parcel build",
         "postinstall": "./scripts/postinstall.sh",
