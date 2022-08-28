@@ -1,5 +1,5 @@
 const path = require('path');
-const { isHttpURL } = require('./utils');
+const { isHttpURL } = require('./utils/string-utils');
 const compassrc = require(path.join(process.cwd(), '/.compassrc.json'));
 
 const compassconfig = _getCompassConfig();
