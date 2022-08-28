@@ -27,11 +27,9 @@
     },
     "homepage": "https://github.com/LukeStanbery89/compass#readme",
     "devDependencies": {
-        "jest": "^29.0.1",
-        "parcel": "^2.7.0"
-    },
-    "dependencies": {
         "@jest/types": "^29.0.1",
-        "node-notifier": "^10.0.1"
+        "jest": "^29.0.1",
+        "node-notifier": "^10.0.1",
+        "parcel": "^2.7.0"
     }
 }
