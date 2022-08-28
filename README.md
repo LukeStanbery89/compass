@@ -1,3 +1,6 @@
+[![Unit Tests](https://github.com/LukeStanbery89/compass/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/LukeStanbery89/compass/actions/workflows/unit-tests.yml)
+[![CodeQL](https://github.com/LukeStanbery89/compass/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/LukeStanbery89/compass/actions/workflows/codeql-analysis.yml)
+
 # Compass
 Package for interfacing with a directory of ports and static IPs addresses on the LAN.
 
