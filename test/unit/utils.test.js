@@ -1,4 +1,4 @@
-const { isHttpURL } = require('../../src/utils');
+const { isHttpURL } = require('../../src/utils/string-utils');
 
 describe('Utilities', () => {
     test('isHttpURL() correctly identifies an HTTP URL', () => {
