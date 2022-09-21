@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 let getServiceURL;
 
 const mockRCLocal = {
@@ -22,6 +24,8 @@ const mockMasterConfig = {
     }
 };
 
+console.log = jest.fn();
+
 describe('Index', () => {
     describe('Locally hosted master config', () => {
         beforeAll(() => {
@@ -37,12 +41,14 @@ describe('Index', () => {
                 { virtual: true }
             );
 
-            getServiceURL = require('../../src/index').getServiceURL;
+            ({ getServiceURL } = require('../../src/index'));
         });
 
         afterAll(() => {
             jest.resetModules();
             jest.resetAllMocks();
+
+            fs.__setMockFiles({});
         });
 
         test('getServiceURL() returns the URL of an existing service', () => {
@@ -75,11 +81,13 @@ describe('Index', () => {
         afterAll(() => {
             jest.resetModules();
             jest.resetAllMocks();
+
+            fs.__setMockFiles({});
         });
 
-        test('getServiceURL() throws an error when trying to access remotely-hosted master config', () => {
+        test('getServiceURL() throws an error when referencing a remote-hosted master config file', () => {
             return expect(() => {
-                getServiceURL = require('../../src/index').getServiceURL;
+                ({ getServiceURL } = require('../../src/index'));
                 return getServiceURL('FAKE_SERVICE');
             }).toThrow('COMPASS ERROR: Compass currently only supports locally hosted files');
         });
