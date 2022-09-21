@@ -39,6 +39,6 @@
         "parcel": "^2.7.0"
     },
     "dependencies": {
-        "@lukestanbery/satchel": "^1.0.3"
+        "@lukestanbery/satchel": "^1.0.4"
     }
 }
