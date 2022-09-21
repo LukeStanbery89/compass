@@ -1,6 +1,6 @@
 {
     "name": "@lukestanbery/compass",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Package for interfacing with a directory of ports and static IPs addresses on the LAN.",
     "source": "src/index.js",
     "main": "dist/index.js",
