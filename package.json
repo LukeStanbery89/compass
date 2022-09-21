@@ -11,9 +11,9 @@
     },
     "scripts": {
         "build": "parcel build",
-        "postinstall": "if [ -e ./scripts/postinstall.sh ]; then ./scripts/postinstall.sh; fi",
+        "prepare": "husky install",
         "prepublishOnly": "npm run build",
-        "test-unit": "jest --coverage=true ./test/unit --verbose --runInBand"
+        "test": "jest --coverage=true ./test/unit --verbose --runInBand"
     },
     "files": [
         "dist/*"
