@@ -33,5 +33,4 @@ jobs:
           npm ci
 
       - name: Run ESLint
-        run: npn run lint
-        continue-on-error: true
+        run: npm run lint
