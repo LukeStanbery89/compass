@@ -1,7 +1,7 @@
 const path = require('path');
 const APP_CONFIG = require('./config.json');
 const { isHttpURL } = require('./utils/string-utils');
-const compassrc = require(path.join(process.cwd(), "/.compassrc.json"));
+const compassrc = require(path.join(process.cwd(), '/.compassrc.json'));
 const satchel = require('@lukestanbery/satchel');
 
 const compassconfig = _getCompassConfig();
