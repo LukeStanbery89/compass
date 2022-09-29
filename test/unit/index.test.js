@@ -32,13 +32,13 @@ describe('Index', () => {
             jest.doMock('../../.compassrc.json', () => {
                 return mockRCLocal;
             },
-                { virtual: true }
+            { virtual: true }
             );
 
             jest.doMock('../../compass-config.json', () => {
                 return mockMasterConfig;
             },
-                { virtual: true }
+            { virtual: true }
             );
 
             ({ getServiceURL } = require('../../src/index'));
@@ -68,13 +68,13 @@ describe('Index', () => {
             jest.doMock('../../.compassrc.json', () => {
                 return mockRCRemote;
             },
-                { virtual: true }
+            { virtual: true }
             );
 
             jest.doMock('../../compass-config.json', () => {
                 return mockMasterConfig;
             },
-                { virtual: true }
+            { virtual: true }
             );
         });
 
