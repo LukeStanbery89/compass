@@ -1,3 +1,5 @@
+'use strict';
+
 const { isHttpURL } = require('../../src/utils/string-utils');
 
 describe('Utilities', () => {

@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');
 const APP_CONFIG = require('./config.json');
 const { isHttpURL } = require('./utils/string-utils');
